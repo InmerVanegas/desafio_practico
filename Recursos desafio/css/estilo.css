@@ -1,0 +1,389 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+.envoltorio {
+	overflow: hidden;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header {
+	background-color: rgb(50, 58, 69);
+	color: white;
+	padding: 20px;
+}
+
+.logo img {
+	height: 42px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline;
+	margin-right: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	background-color: rgb(0, 184, 149);
+}
+
+.contendor-slider {
+	width: 100%;
+	overflow: hidden;
+	border: 1px;
+}
+
+.imagen {
+	width: 100%;
+}
+
+.intro {
+	display: grid;
+	place-items: center;
+	text-align: center;
+}
+
+.intro .envoltorio {
+	width: 100%;
+	display: grid;
+	place-items: center;
+	text-align: center;
+	background-color: rgb(59, 169, 154);
+	padding-bottom: 43px;
+	text-justify: left;
+}
+
+.intro h1 {
+	margin: 20px 0;
+	font-size: 50px;
+	text-decoration: none;
+}
+
+.intro h1 a {
+	text-decoration: none;
+	color: white;
+}
+
+.intro p {
+	margin: 20px 0;
+	text-align: left;
+	margin-left: 218px;
+	margin-right: 308px;
+	color: white;
+}
+
+.intro span {
+	margin-top: 15px;
+}
+
+.intro span a {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: rgb(12, 158, 111);
+	color: white;
+	text-decoration: none;
+}
+
+.servicios .envoltorio {
+	width: 100%;
+	padding-top: 10px;
+}
+
+.servicios {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	justify-items: center;
+	grid-gap: 30px;
+	text-align: center;
+}
+
+.servicios .grid {
+	text-align: center;
+	padding: 26px;
+	/* border: 1px solid #ccc; */
+}
+
+.servicios .grid:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.servicios .grid img {
+	max-width: 100%;
+}
+
+.servicios .grid h3 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: rgb(52, 193, 180);
+
+}
+
+.servicios .grid .botoncito {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: rgb(12, 158, 111);
+	color: white;
+	text-decoration: none;
+}
+
+.grid p {
+	color: rgb(175, 172, 172);
+	text-justify: left;
+	margin-bottom: 20px;
+}
+
+.testimonios .envoltorio {
+	width: 100%;
+	background-color: rgb(223, 219, 216);
+	text-align: center;
+}
+
+.testimonios-grid h3 {
+	font-size: 50px;
+	color: rgb(50, 55, 73);
+	margin-left: 203px;
+}
+
+.testimonios-grid p {
+	color: rgb(175, 172, 172);
+	text-justify: left;
+	margin-left: 69px;
+	margin-top: 10px;
+}
+
+.testimonios-grid .nombre {
+	margin-left: -1400px;
+}
+
+footer {
+	color: white;
+	background-color: rgb(50, 55, 73);
+	font-size: 20px;
+}
+
+@media (max-width: 768px) {
+	@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.envoltorio {
+		overflow: hidden;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		/* Cambiamos la dirección de flex para apilar elementos en móviles */
+		align-items: center;
+	}
+
+	header {
+		background-color: rgb(50, 58, 69);
+		color: white;
+		padding: 20px;
+		text-align: center;
+		/* Centramos el texto en móviles */
+	}
+
+	.logo img {
+		height: auto;
+		max-width: 100%;
+		/* Para que la imagen no se desborde en pantallas pequeñas */
+	}
+
+	nav ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		/* Centramos los enlaces en móviles */
+	}
+
+	nav li {
+		display: block;
+		/* Cambiamos de inline a block para apilar los enlaces en móviles */
+		margin: 10px 0;
+		/* Añadimos margen vertical para separar los enlaces en móviles */
+	}
+
+	nav a {
+		text-decoration: none;
+		color: white;
+		display: inline-block;
+		/* Añadimos display inline-block para dar espacio a los enlaces en móviles */
+		padding: 10px 20px;
+		background-color: rgb(50, 58, 69);
+		/* Cambiamos el color de fondo al mismo que el fondo del encabezado */
+	}
+
+	nav a:hover {
+		background-color: rgb(0, 184, 149);
+	}
+
+	.contendor-slider {
+		width: 100%;
+		overflow: hidden;
+		border: 1px;
+	}
+
+	.imagen {
+		width: 100%;
+		height: auto;
+	}
+
+	.intro {
+		display: grid;
+		place-items: center;
+		text-align: center;
+	}
+
+	.intro .envoltorio {
+		width: 100%;
+		display: grid;
+		place-items: center;
+		text-align: center;
+		background-color: rgb(59, 169, 154);
+		padding-bottom: 20px;
+		/* Reducimos el espacio inferior en móviles */
+	}
+
+	.intro h1 {
+		margin: 20px 0;
+		font-size: 30px;
+		/* Reducimos el tamaño de la fuente en móviles */
+		text-decoration: none;
+	}
+
+	.intro h1 a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.intro p {
+		margin: 20px 0;
+		text-align: left;
+		margin-left: 20px;
+		/* Añadimos margen izquierdo en móviles */
+		margin-right: 20px;
+		/* Añadimos margen derecho en móviles */
+		color: white;
+	}
+
+	.intro span {
+		margin-top: 15px;
+	}
+
+	.intro span a {
+		display: inline-block;
+		padding: 10px 20px;
+		background-color: rgb(12, 158, 111);
+		color: white;
+		text-decoration: none;
+	}
+
+	.servicios .envoltorio {
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	.servicios {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+		grid-gap: 20px;
+		/* Reducimos el espacio entre elementos en móviles */
+		text-align: center;
+	}
+
+	.servicios .grid {
+		text-align: center;
+		padding: 20px;
+		/* Reducimos el espacio interior en móviles */
+	}
+
+	.servicios .grid:hover {
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.servicios .grid img {
+		max-width: 100%;
+	}
+
+	.servicios .grid h3 {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		/* Reducimos el espacio inferior en móviles */
+		color: rgb(52, 193, 180);
+	}
+
+	.servicios .grid .botoncito {
+		display: inline-block;
+		padding: 10px 20px;
+		background-color: rgb(12, 158, 111);
+		color: white;
+		text-decoration: none;
+	}
+
+	.grid p {
+		color: rgb(175, 172, 172);
+		text-align: left;
+		margin-bottom: 10px;
+		/* Reducimos el espacio inferior en móviles */
+	}
+
+	.testimonios .envoltorio {
+		width: 100%;
+		background-color: rgb(223, 219, 216);
+		text-align: center;
+	}
+
+	.testimonios-grid h3 {
+		font-size: 30px;
+		/* Reducimos el tamaño de la fuente en móviles */
+		color: rgb(50, 55, 73);
+		margin-left: 0;
+		/* Eliminamos el margen izquierdo en móviles */
+	}
+
+	.testimonios-grid p {
+		color: rgb(175, 172, 172);
+		text-align: left;
+		margin-left: 20px;
+		/* Añadimos margen izquierdo en móviles */
+		margin-top: 10px;
+	}
+
+	.testimonios-grid .nombre {
+		margin-left: 0;
+		/* Eliminamos el margen izquierdo en móviles */
+	}
+
+	footer {
+		color: white;
+		background-color: rgb(50, 55, 73);
+		font-size: 20px;
+	}
+
+}
